@@ -1,10 +1,10 @@
 # Site settings
-title: Thomas Zühlke
+title: Wei Huo
 description: 'Business Card Page'
 url: 'https://www.zuehlke.cloud'
 baseurl: ''
-profilepic: '/images/tzuehlke.jpg'
-bkimage: '/images/bk1.jpg'
+profilepic: '/images/touxiang.jpg'
+bkimage: '/images/bk3.jpg'
 google_analytics: UA-XXXXXX-X
 font_awesome: 'XXXXXXXXXX.js'
 

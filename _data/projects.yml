@@ -7,14 +7,14 @@
 - name: Graduation design front desk
   gh_user: hw-star
   repo: Graduation-design---Front-desk
-  img: https://blog.zuehlke.cloud/wp-content/uploads/2024/04/AzureCostExportPAYG-Overview-945x293.png
+  img: https://raw.githubusercontent.com/hw-star/hw-star.github.io/refs/heads/master/images/projectImg/Graduation-project.png
 
 - name: Graduation design front end background
   gh_user: hw-star
   repo: Graduation-Design---Front-end-background
-  img: https://blog.zuehlke.cloud/wp-content/uploads/2023/05/snowflake-logs.png
+  img: https://raw.githubusercontent.com/hw-star/hw-star.github.io/refs/heads/master/images/projectImg/Graduation-project.png
   
 - name: The back end of graduation design
   gh_user: hw-star
   repo: Graduation-design---Front-desk
-  img: https://user-images.githubusercontent.com/32843441/150650516-1998923f-b836-4256-99b0-a5e3e86a3322.png
+  img: https://raw.githubusercontent.com/hw-star/hw-star.github.io/refs/heads/master/images/projectImg/Graduation-project.png

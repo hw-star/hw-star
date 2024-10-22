@@ -6,7 +6,7 @@ baseurl: ''
 profilepic: '/images/touxiang.jpg'
 bkimage: '/images/bk3.jpg'
 google_analytics: UA-XXXXXX-X
-font_awesome: 'XXXXXXXXXX.js'
+# font_awesome: 'XXXXXXXXXX.js'
 
 author:
   name: 'Wei Huo'

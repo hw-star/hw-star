@@ -2,7 +2,7 @@
 - name: AI-STAGAN- Hyperfractal reconstruction of remote sensing images
   gh_user: hw-star
   repo: STGAN
-  img: https://github.com/hw-star/hw-star.github.io/blob/master/images/projectImg/stgan_git.png
+  img:  https://raw.githubusercontent.com/hw-star/hw-star.github.io/refs/heads/master/images/projectImg/stgan_git.png
   
 - name: Graduation design front desk
   gh_user: hw-star

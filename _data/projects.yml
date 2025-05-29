@@ -1,5 +1,5 @@
 # projects section data
-- name: AI-STAGAN- Hyperfractal reconstruction of remote sensing images
+- name: AI-STGAN- Hyperfractal reconstruction of remote sensing images
   gh_user: hw-star
   repo: STGAN
   img:  https://raw.githubusercontent.com/hw-star/hw-star.github.io/refs/heads/master/images/projectImg/stgan_git.png

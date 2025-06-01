@@ -54,6 +54,20 @@
   <link rel="canonical" href="{% if page.canonical %}{{ page.canonical }}{% else %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml">
   <script src="https://kit.fontawesome.com/{{ site.font_awesome }}" crossorigin="anonymous"></script>
+  <style>
+  .dark-mode {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  .dark-mode a {
+    color: #9dcfff !important;
+  }
+
+  .dark-mode .main-container {
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.7);
+  }
+</style>
   {% if site.google_analytics %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>

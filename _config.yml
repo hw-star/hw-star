@@ -18,6 +18,21 @@ author:
   # linkedin_username:  thomas-zühlke-889182165
   # meetup_name: Azure-Meetup-Rostock-MV
 
+skills:
+  languages: [Java, Vue, Javascript, Python]
+  frameworks: [Springboot, Vue-Cli, PYtorch]
+  notes:
+    - title: Java 学习笔记
+      url: https://yourdomain.com/notes/java
+    - title: 通讯系统
+      url: https://yourdomain.com/notes/communication
+
+fun:
+  - 🌌 I love stargazing in Xining's clear skies.
+  - 🎮 Big fan of strategy games—especially Civilization VI.
+  - 📷 Enjoy taking photos of landscapes and architecture.
+  - 📚 Learning addict—frequently explore new topics in AI and philosophy.
+
 # Build settings
 destination: _site
 markdown: kramdown

@@ -3,44 +3,51 @@ layout: default
 robots: noindex
 ---
 
-<!--<div class="main-post-list">-->
+<!-- 主体开始 -->
+<div style="display: flex; flex-wrap: wrap; gap: 40px; max-width: 1200px; margin: auto; padding: 40px 20px;">
 
-  <ul class="timeline">
-    
-    {% for project in site.data.projects %}
+  <!-- 左侧个人信息 -->
+  <div style="flex: 1 1 300px; max-width: 350px; text-align: center;">
+    <img src="{{ site.profilepic }}" alt="Profile Picture" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; margin-bottom: 20px;">
+    <h2>{{ site.author.name }}</h2>
+    <p>Second-year master student at School of Computer Technology and Applications, Qinghai University</p>
+    <p>📍 Xining, China</p>
+    <p>🏫 Qinghai University</p>
+    <p>📧 <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+    <p>🔗 <a href="https://orcid.org/{{ site.author.orcid }}" target="_blank">ORCID</a></p>
+    <p>🐱 <a href="https://github.com/{{ site.author.github_username }}" target="_blank">GitHub</a></p>
+  </div>
 
-      <li class="timeline-inverted">
-        <div class="timeline-image">
-          <img class="img-me" src="{{ project.img | prepend: site.baseurl }}" alt="">
-        </div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4><a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank">{{ project.name }}</a></h4>
-          </div>
-          <div class="timeline-body">
-            {% if project.desc %}
-              {{ project.desc | markdownify }}
-            {% else %}
-            <div repotext="{{ project.repo }}">
-              <span class="desc"></div>
-            </div>
-            {% endif %}
-            <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn" style="margin-top: 10px;">
-              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers"><i class="fa fa-star" ></i><span class="iconfont icon-shixinwujiaoxing"></span></a>&emsp;&emsp;
-              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network"><i class="fa fa-code-fork" ></i><span class="iconfont icon-code-branch"></span></a>&emsp;&emsp;
-              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers"><i class="far fa-eye" ></i><span class="iconfont icon-yanjing"></span></a>
-              <div style="height: 10px;"></div>
-          </div>
-        </div>
+  <!-- 右侧正文内容 -->
+  <div style="flex: 2 1 600px; max-width: 800px;">
+    <h2>👋 Hi, I'm {{ site.author.name }}</h2>
+    <p>I'm a second-year Master's student from <strong>School of CTA, Qinghai University</strong>. My research interest includes <strong>Computer Vision, Medical Image Segmentation, Hepatic Echinococcosis</strong>. Supervised by Prof. <a href="#">Jianqiang Huang</a> and Prof. <a href="#">Zhan Wang</a>.</p>
+
+    <h3>📚 Publications</h3>
+    <ul>
+      <li>
+        <strong>HES-UNet: A U-Net for Hepatic Echinococcosis Lesion Segmentation</strong>. <br>
+        Jiayan Chen, Kai Li, Zhanjin Wang, Zhan Wang, Jianqiang Huang. <br>
+        <em>Arxiv 2024</em> &nbsp;
+        <a href="#" target="_blank"><span style="background: #eee; padding: 2px 6px; border-radius: 4px;">Demo Page</span></a>
+        <a href="#" target="_blank"><span style="background: #28a745; color: white; padding: 2px 6px; border-radius: 4px;">Online</span></a>
+        <a href="#" target="_blank"><span style="background: #333; color: white; padding: 2px 6px; border-radius: 4px;">Code</span></a>
       </li>
-    {% endfor %}
-    <!--
-    <li class="timeline-inverted">
-      <div class="timeline-image">
-        <img class="user-image" src="{{site.baseurl}}{{ site.timeline-img }}" alt="">
-      </div>
-    </li> -->
-  </ul>
+    </ul>
 
-<!--</div>-->
+    <h3>🏆 Certificate</h3>
+    <ul>
+      <li><em>2024.11</em> Graduate Study Scholarship</li>
+      <li><em>2021.06</em> Outstanding Graduate of Hebei Province</li>
+      <li><em>2019.11</em> National Scholarship</li>
+    </ul>
 
+    <h3>💻 Projects</h3>
+    <ul>
+      <li><strong>SMGANNet:</strong> Remote Sensing Super-Resolution GAN Framework. <a href="https://github.com/{{ site.author.github_username }}/SMGANNet" target="_blank">[GitHub]</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 背景线条动画 -->
+<script src="/assets/js/createcanvasline.js"></script>

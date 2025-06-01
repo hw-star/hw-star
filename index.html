@@ -3,12 +3,13 @@ layout: default
 robots: noindex
 ---
 
-<!-- 主体开始 -->
-<div style="display: flex; flex-wrap: wrap; gap: 40px; max-width: 1200px; margin: auto; padding: 40px 20px;">
+<canvas id="line">浏览器版本太低，请升级浏览器！</canvas>
 
+<!-- 主体开始 -->
+<div class="main-container">
   <!-- 左侧个人信息 -->
-  <div style="flex: 1 1 300px; max-width: 350px; text-align: center;">
-    <img src="{{ site.profilepic }}" alt="Profile Picture" style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; margin-bottom: 20px;">
+  <div class="sidebar">
+    <img src="{{ site.profilepic }}" alt="Profile Picture" class="profile-pic">
     <h2>{{ site.author.name }}</h2>
     <p>Second-year master student at School of Computer Technology and Applications, Qinghai University</p>
     <p>📍 Xining, China</p>
@@ -19,7 +20,7 @@ robots: noindex
   </div>
 
   <!-- 右侧正文内容 -->
-  <div style="flex: 2 1 600px; max-width: 800px;">
+  <div class="content">
     <h2>👋 Hi, I'm {{ site.author.name }}</h2>
     <p>I'm a second-year Master's student from <strong>School of CTA, Qinghai University</strong>. My research interest includes <strong>Computer Vision, Medical Image Segmentation, Hepatic Echinococcosis</strong>. Supervised by Prof. <a href="#">Jianqiang Huang</a> and Prof. <a href="#">Zhan Wang</a>.</p>
 
@@ -29,9 +30,9 @@ robots: noindex
         <strong>HES-UNet: A U-Net for Hepatic Echinococcosis Lesion Segmentation</strong>. <br>
         Jiayan Chen, Kai Li, Zhanjin Wang, Zhan Wang, Jianqiang Huang. <br>
         <em>Arxiv 2024</em> &nbsp;
-        <a href="#" target="_blank"><span style="background: #eee; padding: 2px 6px; border-radius: 4px;">Demo Page</span></a>
-        <a href="#" target="_blank"><span style="background: #28a745; color: white; padding: 2px 6px; border-radius: 4px;">Online</span></a>
-        <a href="#" target="_blank"><span style="background: #333; color: white; padding: 2px 6px; border-radius: 4px;">Code</span></a>
+        <a href="#" target="_blank"><span class="badge grey">Demo Page</span></a>
+        <a href="#" target="_blank"><span class="badge green">Online</span></a>
+        <a href="#" target="_blank"><span class="badge dark">Code</span></a>
       </li>
     </ul>
 

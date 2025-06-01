@@ -21,6 +21,33 @@
       document.getElementById('toggle-theme').addEventListener('click', function () {
         document.body.classList.toggle('dark-mode');
       });
+      let effectOn = false;
+      let lastSpaceTime = 0;
+      const doubleClickThreshold = 300;
+
+      function clearCanvasById(id) {
+        const canvas = document.getElementById(id);
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+      window.addEventListener('keydown', (e) => {
+        if (e.code === 'Space') {
+          const now = Date.now();
+          if (now - lastSpaceTime < doubleClickThreshold) {
+            if (!effectOn) {
+              createcanvasline();
+              effectOn = true;
+            } else {
+              clearCanvasById('line');
+              effectOn = false;
+            }
+            lastSpaceTime = 0;
+          } else {
+            lastSpaceTime = now;
+          }
+        }
+      });
     </script>
 
 

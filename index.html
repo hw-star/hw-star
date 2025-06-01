@@ -19,34 +19,41 @@ robots: noindex
 
   <!-- 右侧正文内容 -->
   <div class="content">
-    <h3>🏙️ About My City & University</h3>
-    <p>I currently live in <strong>Xining</strong>, a beautiful city located on the Tibetan Plateau, known for its cool climate and diverse culture. I study at <strong>Qinghai University</strong>, in the <strong>School of Computer Technology and Applications</strong>, where I'm pursuing my Master's degree in <strong>Computer Science</strong>.</p>
+    <h3>🏙️ About Me</h3>
+    <p>I currently live in <strong>Xining</strong>, a highland city with rich culture and cool climate. I'm pursuing a Master's degree in <strong>Artificial Intelligence</strong> at <strong>Qinghai University</strong>, in the <strong>School of Computer Technology and Applications</strong>.</p>
 
-    <h3>🛠️ Technical Skills</h3>
+    <h3>🛠️ Skills</h3>
     <ul>
-      <li><strong>Programming:</strong> Python, C++, JavaScript</li>
-      <li><strong>Deep Learning Frameworks:</strong> PyTorch, TensorFlow</li>
-      <li><strong>Other:</strong> OpenCV, Git, Linux, LaTeX</li>
+      <li><strong>Programming Languages:</strong> {{ site.skills.languages | join: ', ' }}</li>
+      <li><strong>Frameworks:</strong> {{ site.skills.frameworks | join: ', ' }}</li>
+    </ul>
+
+    <h3>📝 Study Notes</h3>
+    <ul>
+      {% for note in site.skills.notes %}
+      <li><a href="{{ note.url }}" target="_blank">{{ note.title }}</a></li>
+      {% endfor %}
     </ul>
 
     <h3>📚 Publications</h3>
     <ul>
+      {% for paper in site.publications %}
       <li>
-        <strong>HES-UNet: A U-Net for Hepatic Echinococcosis Lesion Segmentation</strong><br>
-        Jiayan Chen, Kai Li, Zhanjin Wang, Zhan Wang, Jianqiang Huang<br>
-        <em>arXiv 2024</em> &nbsp;
-        <a href="#" target="_blank"><span class="badge grey">Demo</span></a>
-        <a href="#" target="_blank"><span class="badge green">PDF</span></a>
-        <a href="#" target="_blank"><span class="badge dark">Code</span></a>
+        <strong>{{ paper.title }}</strong><br>
+        {{ paper.authors }}<br>
+        <em>{{ paper.venue }}</em> &nbsp;
+        {% if paper.demo %}<a href="{{ paper.demo }}" target="_blank"><span class="badge grey">Demo</span></a>{% endif %}
+        {% if paper.pdf %}<a href="{{ paper.pdf }}" target="_blank"><span class="badge green">PDF</span></a>{% endif %}
+        {% if paper.code %}<a href="{{ paper.code }}" target="_blank"><span class="badge dark">Code</span></a>{% endif %}
       </li>
+      {% endfor %}
     </ul>
 
-    <h3>🎲 Fun Facts & Interests</h3>
+    <h3>🎲 Fun Corner</h3>
     <ul>
-      <li>🌌 I'm fascinated by astronomy and often stargaze when the night sky is clear in Xining.</li>
-      <li>🎮 I enjoy playing strategy games in my downtime—currently hooked on Civilization VI.</li>
-      <li>📷 Amateur photographer: I love capturing landscapes and city scenes with my DSLR.</li>
-      <li>🧠 Lifelong learner: I often take online courses on topics like reinforcement learning and AI ethics.</li>
+      {% for item in site.fun %}
+      <li>{{ item }}</li>
+      {% endfor %}
     </ul>
   </div>
 </div>

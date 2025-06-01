@@ -28,9 +28,9 @@ robots: noindex
       <li><strong>Frameworks:</strong> {{ site.skills.frameworks | join: ', ' }}</li>
     </ul>
 
-    <h3>📝 Study Notes</h3>
+     <h3>📝 Study Notes</h3>
     <ul>
-      {% for note in site.skills.notes %}
+      {% for note in site.notes %}
       <li><a href="{{ note.url }}" target="_blank">{{ note.title }}</a></li>
       {% endfor %}
     </ul>

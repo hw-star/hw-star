@@ -57,6 +57,11 @@ canvas#line {
   color: #333;
 }
 
+.badge.blue {
+  background: #54AEFF;
+  color: white;
+}
+
 .badge.green {
   background: #28a745;
   color: white;

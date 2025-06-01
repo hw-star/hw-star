@@ -1,4 +1,4 @@
-console.log("github_api loaded");
+// console.log("github_api loaded");
 $(document).ready(function() {
   users = []
   repos = []

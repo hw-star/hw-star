@@ -21,11 +21,20 @@ author:
 skills:
   languages: [Java, Vue, Javascript, Python]
   frameworks: [Springboot, Vue-Cli, PYtorch]
-  notes:
+  
+notes:
     - title: Java 学习笔记
       url: https://yourdomain.com/notes/java
     - title: 通讯系统
       url: https://yourdomain.com/notes/communication
+      
+publications:
+  - title: "HES-UNet: A U-Net for Hepatic Echinococcosis Lesion Segmentation"
+    authors: "Jiayan Chen, Kai Li, Zhanjin Wang, Zhan Wang, Jianqiang Huang"
+    venue: "arXiv 2024"
+    demo: "#"
+    pdf: "#"
+    code: "#"
 
 fun:
   - 🌌 I love stargazing in Xining's clear skies.

@@ -19,8 +19,22 @@ author:
   # meetup_name: Azure-Meetup-Rostock-MV
 
 skills:
-  languages: [Java, Vue, Javascript, Python]
-  frameworks: [Springboot, Vue-Cli, PyTorch]
+  frontend:
+    - Vue
+    - JavaScript
+    - CSS
+    - ElementUI
+  backend:
+    - Java
+    - SpringBoot
+    - Redis
+    - MySQL
+  ai:
+    - Python
+    - PyTorch
+  others:
+    - Linux
+    - Crawler
   
 notes:
     - title: Java 学习笔记

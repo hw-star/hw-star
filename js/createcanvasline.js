@@ -113,5 +113,3 @@ function createcanvasline() {
         }
       }, 20);
 }
-
-createcanvasline();

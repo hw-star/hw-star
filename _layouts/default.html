@@ -26,7 +26,7 @@
         if (e.code === "Space") {
           const now = Date.now();
           if (now - lastSpaceTime < 400) {
-            if (CanvasEffect.isRunning()) {
+            if (createcanvasline.isRunning()) {
               CanvasEffect.stop();
             } else {
               CanvasEffect.start();

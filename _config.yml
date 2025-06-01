@@ -43,12 +43,12 @@ notes:
       url: https://yourdomain.com/notes/communication
       
 publications:
-  - title: "HES-UNet: A U-Net for Hepatic Echinococcosis Lesion Segmentation"
-    authors: "Jiayan Chen, Kai Li, Zhanjin Wang, Zhan Wang, Jianqiang Huang"
+  - title: "STGAN: Swin Transformer-Based GAN to Achieve Remote Sensing Image Super-Resolution Reconstruction"
+    authors: "Wei Huo, Xiaodan Zhang, Shaojie You, Yongkun Zhang, Qiyuan Zhang and Naihao Hu"
     venue: "arXiv 2024"
-    demo: "#"
-    pdf: "#"
-    code: "#"
+    demo: "https://github.com/hw-star/STGAN"
+    pdf: "https://doi.org/10.3390/app15010305"
+    code: "https://github.com/hw-star/STGAN"
 
 fun:
   - 🌌 I love stargazing in Xining's clear skies.

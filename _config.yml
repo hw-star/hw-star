@@ -37,10 +37,10 @@ skills:
     - Crawler
   
 notes:
-    - title: Java 学习笔记
-      url: https://yourdomain.com/notes/java
-    - title: 通讯系统
-      url: https://yourdomain.com/notes/communication
+    - title: Java Learning Notes
+      url: https://blog.csdn.net/weixin_45262946/article/details/128457373
+    - title: Communication system based on Socket
+      url: https://download.csdn.net/download/weixin_45262946/87764032
       
 publications:
   - title: "STGAN: Swin Transformer-Based GAN to Achieve Remote Sensing Image Super-Resolution Reconstruction"

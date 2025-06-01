@@ -228,7 +228,7 @@
   }
 
   // 暴露接口
-  window.CanvasEffect = {
+  window.createcanvasline = {
     start: startCanvasLine,
     stop: stopCanvasLine,
     isRunning: () => isRunning,

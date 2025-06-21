@@ -49,6 +49,12 @@ publications:
     demo: https://hw-star.github.io/STGAN
     pdf: "https://www.mdpi.com/2076-3417/15/1/305/pdf"
     code: "https://github.com/hw-star/STGAN"
+  - title: "SMGAN: A Multi-Path Generative Adversarial Network for Remote Sensing Image Super-Resolution Reconstruction"
+    authors: "Wei Huo, Xiaodan Zhang,"
+    venue: "arXiv 2025"
+    demo: https://hw-star.github.io/SMGAN
+    pdf: ""
+    code: "https://github.com/hw-star/SMGAN"
 
 fun:
   - 🌌 I love stargazing in Xining's clear skies.
